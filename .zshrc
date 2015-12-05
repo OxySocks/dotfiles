@@ -9,15 +9,10 @@ plugins=(git)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+PATH=$PATH:/home/tim/git/install-elixir-1.0.4/erlang_and_elixir/elixir-v1.0.4/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 source $ZSH/oh-my-zsh.sh
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Little alias to properly set the /var/www group for my user account
 # http://askubuntu.com/questions/19898/whats-the-simplest-way-to-edit-and-add-files-to-var-www
@@ -42,3 +37,4 @@ symfacl() {
 	sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 }
 
+export TERM=xterm-256color
