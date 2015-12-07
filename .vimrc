@@ -41,6 +41,9 @@ nnoremap <space> za
 " CtrlP mapping to <c-p>
 nnoremap <silent> <C-t> :CtrlP<CR>
 
+" NERDTree mapping to <C-n>
+nnoremap <silent> <C-n> :NERDTree<CR>
+
 " Create Blank Newlines and stay in Normal mode
 nnoremap <silent> zj o<Esc>
 nnoremap <silent> zk O<Esc>
